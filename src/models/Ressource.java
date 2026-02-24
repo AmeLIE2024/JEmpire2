@@ -46,6 +46,22 @@ public class Ressource {
         return or;
     }
 
+    public void colecterBois(int bois){
+        this.bois += bois;
+    }
+
+    public void collecterPierre(int pierre){
+        this.pierre += pierre;
+    }
+
+    public void collecterFer(int fer){
+        this.fer += fer;
+    }
+
+    public void collecterNourriture(int nourriture){
+        this.nourriture += nourriture;
+    }
+
     public List<Villageois> getPopulation() {
         return population;
     }
