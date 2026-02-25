@@ -6,7 +6,7 @@ public class Ferme extends Batiment {
     private int nourritureStockee;
 
     public Ferme() {
-        super("Ferme", 30, 5, 0, 5);
+        super("Ferme", 30, 5, 0, 5,0,1,20,1);
         this.nourritureStockee = 0;
     }
 //

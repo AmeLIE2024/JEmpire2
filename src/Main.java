@@ -24,9 +24,9 @@ public class Main {
                             " | Or : " + ressourceJoueur.getOr() +
                             " | Nourriture : " + ressourceJoueur.getNourriture() +
                             " | Fer : " + ressourceJoueur.getFer() +
-                            " | Maison: " + maisonDepart.getClass() +
+                            " | Maison: "  +
                             " |");
-            Menu.menu(ressourceJoueur, scanner);
+            Menu.menu(ressourceJoueur, scanner, maisonDepart);
         }
         jour++;
 
