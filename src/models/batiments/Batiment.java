@@ -14,6 +14,9 @@ public class Batiment {
     private int villageoisAffectes;
     private int capaciteMaxVillageois;
 
+    public Batiment() {
+
+    }
 
     public Batiment(String nom, int coutBois,int coutpierre, int coutOr, int capaciteMax) {
         this.nom = nom;
@@ -24,6 +27,8 @@ public class Batiment {
         this.capaciteMaxVillageois = capaciteMax;
         this.villageoisAffectes = 0;
     }
+
+
     /*
     public void appliquerEffet();
 
