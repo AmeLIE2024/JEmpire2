@@ -13,21 +13,32 @@ public class Batiment {
     private int coutOrConstruction;
     private int villageoisAffectes;
     private int capaciteMaxVillageois;
+    private int coutNourritureConstruction;
 
-    public Batiment() {
-
-    }
-
-    public Batiment(String nom, int coutBois,int coutpierre, int coutOr, int capaciteMax) {
+    public Batiment(String nom, int niveau, int niveauMax, int coutBoisConstruction, int coutpierreConstruction, int coutOrConstruction, int villageoisAffectes, int capaciteMaxVillageois, int coutNourritureConstruction) {
         this.nom = nom;
-        this.niveau = 1;
-        this.coutBoisConstruction = coutBois;
-        this.coutpierreConstruction = coutpierre;
-        this.coutOrConstruction = coutOr;
-        this.capaciteMaxVillageois = capaciteMax;
-        this.villageoisAffectes = 0;
+        this.niveau = niveau;
+        this.niveauMax = niveauMax;
+        this.coutBoisConstruction = coutBoisConstruction;
+        this.coutpierreConstruction = coutpierreConstruction;
+        this.coutOrConstruction = coutOrConstruction;
+        this.villageoisAffectes = villageoisAffectes;
+        this.capaciteMaxVillageois = capaciteMaxVillageois;
+        this.coutNourritureConstruction = coutNourritureConstruction;
     }
 
+    public Batiment(String maison, int niveau, int niveauMax, int coutBoisConstruction, int coutpierreConstruction, int coutOrConstruction) {
+    }
+
+    public void constructBatiment(int bois, int pierre, int fer, int or, int villageois, int nourriture ){
+        this.coutBoisConstruction -= bois;
+        this.coutpierreConstruction -= pierre;
+        this.coutOrConstruction -= or;
+        this.capaciteMaxVillageois -= fer;
+        this.villageoisAffectes += villageois;
+        this.coutNourritureConstruction -= nourriture;
+
+    }
 
     /*
     public void appliquerEffet();
