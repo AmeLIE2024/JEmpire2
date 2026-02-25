@@ -27,8 +27,7 @@ public class Batiment {
         this.coutNourritureConstruction = coutNourritureConstruction;
     }
 
-    public Batiment(String maison, int niveau, int niveauMax, int coutBoisConstruction, int coutpierreConstruction, int coutOrConstruction) {
-    }
+
 
     public void constructBatiment(int bois, int pierre, int fer, int or, int villageois, int nourriture ){
         this.coutBoisConstruction -= bois;

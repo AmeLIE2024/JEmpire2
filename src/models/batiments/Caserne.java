@@ -9,7 +9,7 @@ public class Caserne extends Batiment {
     private int soldatEnFile;
 
     public Caserne() {
-        super("Caserne", 40, 30, 10, 3);
+        super("Caserne", 40, 30, 10, 3,0,1,50,1);
         this.tourRestantFormation = 0;
         this.soldatEnFile = 0;
     }

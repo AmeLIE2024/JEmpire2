@@ -1,15 +1,29 @@
 package models.batiments;
 
+import models.Ressource;
+
 public class Maison extends Batiment {
 
 
     private int capacitePopulation;
 
+
     public Maison() {
-        super("Maison", 20, 10, 0, 0,1);
+        super("Maison", 20, 10, 0, 0,1,10,1,1);
        // this.capaciteMaxVillageois = 0;
         this.capacitePopulation = 1;
     }
+
+    public static void createMaison (Ressource ressource){
+        Maison maison = new Maison();
+        maison.constructBatiment(20,10,0,0,0,1);
+
+    }
+
+
+
+
+
 /*
     public int getCapacitePopulation() {
         return niveau;
