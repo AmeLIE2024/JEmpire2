@@ -37,9 +37,9 @@ public class Batiment {
         this.capaciteMaxVillageois -= fer;
         this.villageoisAffectes += villageois;
         this.coutNourritureConstruction -= nourriture;
-        
+
     }
-    
+
     /*
     public void appliquerEffet();
 

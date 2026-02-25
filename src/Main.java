@@ -1,5 +1,6 @@
 import models.Menu;
 import models.Ressource;
+import models.batiments.Maison;
 
 import java.util.List;
 import java.util.Scanner;
@@ -7,8 +8,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Ressource ressourceJoueur = new Ressource(0, 0, 100, 0, 50, List.of());
+        Ressource ressourceJoueur = new Ressource(50, 50, 100, 10, 50);
+        Maison maisonDepart = new Maison();
         Scanner scanner = new Scanner(System.in);
+
+
         System.out.println("JEmpire V02");
         int jour = 0;
         while (jour == jour){
@@ -20,7 +24,7 @@ public class Main {
                             " | Or : " + ressourceJoueur.getOr() +
                             " | Nourriture : " + ressourceJoueur.getNourriture() +
                             " | Fer : " + ressourceJoueur.getFer() +
-                            " | Population : " + ressourceJoueur.getPopulation() +
+                            " | Maison: " + maisonDepart.getClass() +
                             " |");
             Menu.menu(ressourceJoueur, scanner);
         }
