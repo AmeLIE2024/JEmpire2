@@ -8,20 +8,31 @@ public class Maison extends Batiment {
     private int capacitePopulation;
 
 
+    static int coutBois = 20;
+    static int coutNourriture = 1;
+
+
     public Maison() {
-        super("Maison", 20, 10, 0, 0,1,10,1,1);
+        super("Maison", 1, 10, 0, 0,1, 1, 10, 1);
+
        // this.capaciteMaxVillageois = 0;
-        this.capacitePopulation = 1;
+        //this.capacitePopulation = 1;
     }
 
-    public static void createMaison (Ressource ressource){
+    public static Batiment constructBatiment(Ressource ressource){
+        if(ressource.getBois() < coutBois) {
+            System.err.println("Pas assew de bois");
+            return null;
+        } else if (ressource.getNourriture() > coutNourriture) {
+            System.err.println("Pas assew de nourriture");
+            return null;
+        }
         Maison maison = new Maison();
-        maison.constructBatiment(20,10,0,0,0,1);
+        ressource.collecterNourriture(-coutNourriture);
+        ressource.colecterBois(-coutBois);
 
+        return maison;
     }
-
-
-
 
 
 /*

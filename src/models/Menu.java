@@ -1,6 +1,6 @@
 package models;
 
-import models.batiments.Batiment;
+
 import models.batiments.Maison;
 
 import java.util.Scanner;
