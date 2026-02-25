@@ -10,6 +10,7 @@ public class Villageois {
 
     public void construire(){
 
+
     }
 
     public void collecter(){
