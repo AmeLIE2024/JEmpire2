@@ -6,7 +6,7 @@ public class Maison extends Batiment {
     private int capacitePopulation;
 
     public Maison() {
-        super("Maison", 20, 10, 0, 0);
+        super("Maison", 20, 10, 0, 0,1);
        // this.capaciteMaxVillageois = 0;
         this.capacitePopulation = 1;
     }
