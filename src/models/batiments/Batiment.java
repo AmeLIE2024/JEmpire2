@@ -1,5 +1,7 @@
 package models.batiments;
 
+import models.Ressource;
+
 import java.util.Scanner;
 
 public class Batiment {
@@ -27,18 +29,12 @@ public class Batiment {
         this.coutNourritureConstruction = coutNourritureConstruction;
     }
 
-    public Batiment(String maison, int niveau, int niveauMax, int coutBoisConstruction, int coutpierreConstruction, int coutOrConstruction) {
+
+
+    public static Batiment constructBatiment(Ressource ressource){
+        return null;
     }
 
-    public void constructBatiment(int bois, int pierre, int fer, int or, int villageois, int nourriture ){
-        this.coutBoisConstruction -= bois;
-        this.coutpierreConstruction -= pierre;
-        this.coutOrConstruction -= or;
-        this.capaciteMaxVillageois -= fer;
-        this.villageoisAffectes += villageois;
-        this.coutNourritureConstruction -= nourriture;
-        
-    }
     
     /*
     public void appliquerEffet();

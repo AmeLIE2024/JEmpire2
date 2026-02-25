@@ -1,5 +1,7 @@
 package models;
 
+import models.batiments.Maison;
+
 import java.util.Scanner;
 
 public class Menu {
