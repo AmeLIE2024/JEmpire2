@@ -9,7 +9,7 @@ public class Mine extends Batiment{
     private int ferStocke;
 
     public Mine() {
-        super("Mine", 15, 40, 5, 4); // 4 villageois max
+        super("Mine", 15, 40, 5, 4,0,1,10,1); // 4 villageois max
         this.pierreStockee = 0;
         this.ferStocke     = 0;
     }

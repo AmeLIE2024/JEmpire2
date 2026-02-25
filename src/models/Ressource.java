@@ -1,5 +1,6 @@
 package models;
 
+import models.batiments.Maison;
 import models.unites.Villageois;
 
 import java.util.List;
@@ -11,20 +12,21 @@ public class Ressource {
     private int nourriture;
     private int fer;
     private int or;
-    List<Villageois> population;
 
 
     public Ressource() {
     }
 
-    public Ressource(int bois, int pierre, int nourriture, int fer, int or, List<Villageois> population) {
+    public Ressource(int bois, int pierre, int nourriture, int fer, int or) {
         this.bois = bois;
         this.pierre = pierre;
         this.nourriture = nourriture;
         this.fer = fer;
         this.or = or;
-        this.population = population;
+
     }
+
+
 
     public int getBois() {
         return bois;
@@ -62,7 +64,5 @@ public class Ressource {
         this.nourriture += nourriture;
     }
 
-    public List<Villageois> getPopulation() {
-        return population;
-    }
+
 }

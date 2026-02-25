@@ -11,7 +11,7 @@ public class Atelier extends Batiment {
     private double bonusProductionGlobal;
 
     public Atelier() {
-        super("Atelier", 25, 20, 5, 3);
+        super("Atelier", 25, 20, 5, 3,10,1,5,5);
         this.outilsStockee = 0;
         this.armesStockee = 0;
         this.armesEnCours = 0.0;

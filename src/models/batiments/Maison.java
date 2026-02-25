@@ -7,12 +7,14 @@ public class Maison extends Batiment {
 
     private int capacitePopulation;
 
+
     static int coutBois = 20;
     static int coutNourriture = 1;
 
 
     public Maison() {
         super("Maison", 1, 10, 0, 0,1, 1, 10, 1);
+
        // this.capaciteMaxVillageois = 0;
         //this.capacitePopulation = 1;
     }
@@ -31,6 +33,7 @@ public class Maison extends Batiment {
 
         return maison;
     }
+
 
 /*
     public int getCapacitePopulation() {

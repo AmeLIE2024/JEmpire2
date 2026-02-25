@@ -31,11 +31,13 @@ public class Batiment {
 
 
 
+
     public static Batiment constructBatiment(Ressource ressource){
         return null;
     }
 
     
+
     /*
     public void appliquerEffet();
 
